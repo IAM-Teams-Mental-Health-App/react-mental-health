@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import CreateMain from './pages/CreateMain';
 import ViewLantern from './pages/ViewLantern';
 import Footer from './components/Footer';
-import BtnAdd from './components/BtnAdd';
+// import BtnAdd from './components/BtnAdd';
 
 // functional component, currently no state
 function App() {
@@ -27,7 +27,7 @@ function App() {
           <p>Route/Page does not exist</p>
         </Route>
       </Switch>
-      <BtnAdd />
+      {/* <BtnAdd /> */}
       <Footer />
     </div>
   );
