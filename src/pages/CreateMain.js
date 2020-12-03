@@ -26,7 +26,7 @@ export default function CreateMain() {
 
 function CreateLanternForm({ handleCount }) {
   return (
-    <div>
+    <div className="create__write">
       <h1>What's on your mind?</h1>
 
       <form className="create__main__form">

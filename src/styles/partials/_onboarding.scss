@@ -11,12 +11,14 @@
     align-items: center;
     h1 {
       color: #084d69;
+      font-weight: 600;
+      font-size: 2.25rem;
+      margin-bottom: 2rem;
     }
-
     h2 {
       max-width: 30rem;
       font-weight: 300;
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 
@@ -32,9 +34,11 @@
         width: 50%;
         height: auto;
         padding-right: 2rem;
+
         h3 {
           margin-top: 0;
           color: #cc6700;
+          font-weight: 700;
         }
       }
       .step__right {
@@ -46,11 +50,16 @@
 
       ul {
         list-style: none;
-        margin-bottom: 20rem;
+        margin-top: -0.5rem;
+        margin-left: -3rem;
       }
 
       li {
         padding: 0.5rem;
+        font-weight: 500;
+      }
+      p {
+        font-weight: 500;
       }
     }
 

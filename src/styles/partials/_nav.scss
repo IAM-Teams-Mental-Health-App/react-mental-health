@@ -1,0 +1,14 @@
+.header__inner {
+  margin-right: -4rem;
+  p {
+    display: inline-block;
+    margin: 1rem;
+    margin-right: 1rem;
+    color: #084d69;
+    font-weight: 600;
+  }
+
+  p:hover {
+    border-bottom: 3px #cc6700 solid;
+  }
+}
