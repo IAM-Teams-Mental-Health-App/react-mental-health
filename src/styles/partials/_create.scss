@@ -23,6 +23,22 @@
       outline: none;
       resize: none;
       overflow: auto;
+      scroll-padding: 50px 0px 0px 50px;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+      overflow: hidden;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+      padding: 10px;
+      margin: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
     }
   }
 
