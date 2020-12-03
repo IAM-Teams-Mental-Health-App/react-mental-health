@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 // locals
 import { data as lanterns } from '../dummy/data';
 import Lantern from '../components/Lantern';

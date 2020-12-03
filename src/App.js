@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import CreateMain from './pages/CreateMain';
 import ViewLantern from './pages/ViewLantern';
 import Footer from './components/Footer';
+import BtnAdd from './components/BtnAdd';
 
 // functional component, currently no state
 function App() {
@@ -20,16 +21,15 @@ function App() {
         <Route exact path="/about" component={Onboarding} />
         <Route path="/home/create" component={CreateMain} />
         <Route path="/home/view/:id" component={ViewLantern} />
-
         {/* ERROR Handling */}
         <Route>
           <h1>Error</h1>
           <p>Route/Page does not exist</p>
         </Route>
       </Switch>
+      <BtnAdd />
       <Footer />
     </div>
   );
 }
-
 export default App;
