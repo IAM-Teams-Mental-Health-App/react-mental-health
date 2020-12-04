@@ -4,24 +4,26 @@ export default function Onboarding() {
   return (
     <main className="onboarding__main">
       <div className="home__hero">
-        <h1>Welcome</h1>
+        <h1>Thanks For Stopping By</h1>
         <h2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod
+          Here it is all about letting go of our thoughts. This is a safe space
+          where you can share your feelings and see how others are feeling and
+          support them.
         </h2>
       </div>
       <div className="home__steps">
         {/* home steps will look like this */}
         <div className="step__container">
           <div className="step__left">
-            <h3>01/ A safe space to share </h3>
+            <h3>01/ Create your lantern </h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
+              First you are going to write down whatever it is you need to let
+              go of. It can be a negative feeling, something you want to
+              manifest. Big or small it does not matter.
             </p>
             <p className="subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
+              Remember this is a safe space share whatever you want. There are
+              no requirements. Just come as you are.
             </p>
           </div>
           <div className="step__right">
@@ -34,14 +36,14 @@ export default function Onboarding() {
         {/* home steps will look like this */}
         <div className="step__container">
           <div className="step__left">
-            <h3>02/Create a lantern</h3>
+            <h3>02/ Send your lantern</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
+              Once you write your lantern send it out to the world. Watch it
+              float away into the sky.
             </p>
             <p className="subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
+              As your lantern floats away notice how the thought leaves your
+              mind and you feel a little lighter.
             </p>
           </div>
           <div className="step__right">
@@ -54,14 +56,15 @@ export default function Onboarding() {
         {/* home steps will look like this */}
         <div className="step__container">
           <div className="step__left">
-            <h3>03/ Send your Lantern</h3>
+            <h3>03/ Read other lanterns</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
+              Click on the floating lanterns to open them and see how other
+              people are feeling. All messages are anonymous. Offer support by
+              adding a reaction.
             </p>
             <p className="subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
+              No on is required to read or react to anything. And everything is
+              always anonymous no one will know it is you.
             </p>
           </div>
           <div className="step__right">
@@ -73,17 +76,17 @@ export default function Onboarding() {
         </div>
         <div className="step__container">
           <div className="step__left">
-            <h3>04/The Team</h3>
+            <h3>04/ The Team</h3>
             <ul>
               <li>Riley Jakusik - Project Manager / UX Engineer</li>
-              <li>Mark</li>
-              <li>Tyler</li>
-              <li>Vicki</li>
-              <li>Artur</li>
-              <li>Matt</li>
-              <li>Erin</li>
-              <li>Mackenzie</li>
-              <li>Justin</li>
+              <li>Mark Ambrocio - Full Stack Developer</li>
+              <li>Matt Baisl - UI Designer</li>
+              <li>Mackenzie Chernok - UX Designer</li>
+              <li>Artur Ciecierski - UX/UI Designer</li>
+              <li>Erin Gruenwedel - UI Designer</li>
+              <li>Vicki Lei - UI Designer / Front End Developer</li>
+              <li>Tyler Morales - Front End Developer</li>
+              <li>Justin Wang - UX Designer</li>
             </ul>
           </div>
           <div className="step__right">

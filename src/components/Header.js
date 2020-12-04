@@ -15,8 +15,12 @@ export default function Header() {
   return (
     <header className="site__header">
       <div className="header__inner">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Link to="/">
+          <p>Home</p>
+        </Link>
+        <Link to="/about">
+          <p>About</p>
+        </Link>
       </div>
     </header>
   );

@@ -7,7 +7,6 @@ import Onboarding from './pages/Onboarding';
 import Home from './pages/Home';
 import CreateMain from './pages/CreateMain';
 import ViewLantern from './pages/ViewLantern';
-import Footer from './components/Footer';
 
 // functional component, currently no state
 function App() {
@@ -27,7 +26,6 @@ function App() {
           <p>Route/Page does not exist</p>
         </Route>
       </Switch>
-      <Footer />
     </div>
   );
 }
