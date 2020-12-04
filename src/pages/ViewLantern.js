@@ -8,9 +8,9 @@ export default function ViewLantern() {
   // console.log(lantern);
   return (
     <main className="view__container">
-      <h1>Viewing a Lantern: {lantern.id}</h1>
+      {/* <h1>Viewing a Lantern: {lantern.id}</h1> */}
       <p>{lantern.content}</p>
-      <p>{JSON.stringify(lantern.replies, null, 2)}</p>
+      {/* <p>{JSON.stringify(lantern.replies, null, 2)}</p> */}
     </main>
   );
 }

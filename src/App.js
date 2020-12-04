@@ -17,8 +17,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={Onboarding} />
-        <Route path="/home/create" component={CreateMain} />
-        <Route path="/home/view/:id" component={ViewLantern} />
+        <Route path="/create" component={CreateMain} />
+        <Route path="/view/:id" component={ViewLantern} />
 
         {/* ERROR Handling */}
         <Route>

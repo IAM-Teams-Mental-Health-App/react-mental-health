@@ -34,10 +34,9 @@ export default function Lantern({ data }) {
 
   return (
     <>
-      <Link to={`home/view/${data.id}`} className="lantern__main">
+      <Link to={`/view/${data.id}`} className="lantern__main">
         <img src={lanternImg} alt="user lantern" />
       </Link>
-      {/* test */}
     </>
   );
 }

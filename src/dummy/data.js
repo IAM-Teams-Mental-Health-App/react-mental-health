@@ -36,8 +36,8 @@ export const data = [
     },
   },
   {
-    id: 123,
-    type: 'circle',
+    id: 345,
+    type: 'circle2',
     color: 'FFC47E',
     content:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consectetur enim eligendi laboriosam, dolor tempora debitis distinctio quisquam et unde, ipsam perferendis soluta obcaecati facilis omnis vitae inventore saepe deserunt!',
@@ -48,7 +48,7 @@ export const data = [
     },
   },
   {
-    id: 321,
+    id: 456,
     type: 'square',
     color: '395185',
     content:
@@ -60,8 +60,8 @@ export const data = [
     },
   },
   {
-    id: 234,
-    type: 'circle',
+    id: 567,
+    type: 'circle2',
     color: 'EE4444',
     content:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consectetur enim eligendi laboriosam, dolor tempora debitis distinctio quisquam et unde, ipsam perferendis soluta obcaecati facilis omnis vitae inventore saepe deserunt!',
