@@ -7,7 +7,7 @@ import circle1 from '../assets/lanterns/circle_lantern.jpg';
 import circle2 from '../assets/lanterns/circle2_lantern.jpg';
 import square from '../assets/lanterns/square_lantern.jpg';
 
-export default function Lantern({ data, rando }) {
+export default function Lantern({ data }) {
   // shape color from props
   // const type = ['circle', 'square'];
   // const colors = ['FFC47E', '395185', 'EE4444'];
@@ -34,14 +34,7 @@ export default function Lantern({ data, rando }) {
 
   return (
     <>
-      <Link
-        to={`home/view/${data.id}`}
-        className="lantern__main"
-        style={{
-          top: rando.randomTop,
-          left: rando.randomLeft,
-        }}
-      >
+      <Link to={`home/view/${data.id}`} className="lantern__main">
         <img src={lanternImg} alt="user lantern" />
       </Link>
       {/* test */}
