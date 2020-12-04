@@ -1,13 +1,15 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 // local imports
-import { Link } from 'react-router-dom';
 import circle1 from '../assets/lanterns/circle_lantern.jpg';
 import circle2 from '../assets/lanterns/circle2_lantern.jpg';
 import square from '../assets/lanterns/square_lantern.jpg';
+import attachFly from '../hooks/attachFly';
 
 export default function Lantern({ data }) {
+  const history = useHistory();
   let lanternImg;
 
   switch (data.type) {
@@ -25,16 +27,19 @@ export default function Lantern({ data }) {
       return;
   }
 
-  console.log(data);
-
   return (
-    <>
-      <Link
-        to={`/view/${data.id}`}
-        className="lantern__main animate__animated animate__fadeInUp animate__slower"
-      >
-        <img src={lanternImg} alt="user lantern" />
-      </Link>
-    </>
+    <button
+      type="button"
+      className="lantern__main animate__animated animate__fadeInUp animate__slower"
+      onClick={() => {
+        attachFly();
+        // wait for 1.9s before pushing to deets
+        setTimeout(() => {
+          history.push(`/view/${data.id}`);
+        }, 1900);
+      }}
+    >
+      <img src={lanternImg} alt="view lantern details" />
+    </button>
   );
 }

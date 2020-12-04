@@ -30,6 +30,9 @@ export default function Onboarding() {
             <img
               src="https://picsum.photos/seed/picsum/640/365"
               alt="placeholder"
+              width="640px"
+              height="365px"
+              className="animate__animated  animate__fadeIn	"
             />
           </div>
         </div>
@@ -50,6 +53,9 @@ export default function Onboarding() {
             <img
               src="https://picsum.photos/seed/picsum2/640/365"
               alt="placeholder"
+              width="640px"
+              height="365px"
+              className="animate__animated  animate__fadeIn"
             />
           </div>
         </div>
@@ -71,6 +77,9 @@ export default function Onboarding() {
             <img
               src="https://picsum.photos/seed/picsum3/640/365"
               alt="placeholder"
+              width="640px"
+              height="365px"
+              className="animate__animated  animate__fadeIn"
             />
           </div>
         </div>
@@ -93,6 +102,9 @@ export default function Onboarding() {
             <img
               src="https://picsum.photos/seed/picsum2/640/365"
               alt="placeholder"
+              width="640px"
+              height="365px"
+              className="animate__animated  animate__fadeIn"
             />
           </div>
         </div>
