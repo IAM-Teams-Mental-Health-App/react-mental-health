@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
+import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 // local imports
@@ -9,27 +9,21 @@ import square from '../assets/lanterns/square_lantern.jpg';
 import attachFly from '../hooks/attachFly';
 
 export default function Lantern({ data }) {
-  const [imgDimensions, setImgDimensions] = useState([210, 337]);
-
   const history = useHistory();
   let lanternImg;
 
   switch (data.type) {
     case 'circle':
       lanternImg = circle1;
-      setImgDimensions([210, 337]);
       break;
     case 'square':
       lanternImg = square;
-      setImgDimensions([210, 429]);
       break;
     case 'circle2':
       lanternImg = circle2;
-      setImgDimensions([210, 249]);
       break;
     default:
       lanternImg = circle1;
-      setImgDimensions([210, 337]);
       return;
   }
 
@@ -45,12 +39,7 @@ export default function Lantern({ data }) {
         }, 1900);
       }}
     >
-      <img
-        src={lanternImg}
-        alt="view lantern details"
-        width={imgDimensions[0]}
-        height={imgDimensions[1]}
-      />
+      <img src={lanternImg} alt="view lantern details" />
     </button>
   );
 }
