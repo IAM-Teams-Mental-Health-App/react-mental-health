@@ -8,9 +8,6 @@ import circle2 from '../assets/lanterns/circle2_lantern.jpg';
 import square from '../assets/lanterns/square_lantern.jpg';
 
 export default function Lantern({ data }) {
-  // shape color from props
-  // const type = ['circle', 'square'];
-  // const colors = ['FFC47E', '395185', 'EE4444'];
   let lanternImg;
 
   switch (data.type) {
@@ -28,13 +25,14 @@ export default function Lantern({ data }) {
       return;
   }
 
-  // const handleClick = () => {
-  //   console.log('click worked');
-  // };
+  console.log(data);
 
   return (
     <>
-      <Link to={`/view/${data.id}`} className="lantern__main">
+      <Link
+        to={`/view/${data.id}`}
+        className="lantern__main animate__animated animate__fadeInUp animate__slower"
+      >
         <img src={lanternImg} alt="user lantern" />
       </Link>
     </>
