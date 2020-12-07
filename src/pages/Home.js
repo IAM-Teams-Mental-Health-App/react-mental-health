@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <main className="home__dashboard">
       <div className="home__ui">
-        <h1>HOME</h1>
         <Link to="/create">Create Lantern</Link>
       </div>
       <div className="home__lanterns">

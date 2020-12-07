@@ -1,7 +1,6 @@
 h1 {
   font-size: 31px;
   font-weight: 400;
-  color: white;
   text-align: center;
 }
 
@@ -10,8 +9,38 @@ h1 {
   height: auto;
   width: 400px;
   border-radius: 10px;
-  background-color: #c4c4c4;
+  background-color: white;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+}
+
+.animate__fadeInUp {
+  min-width: 450px;
+  min-height: 350px;
+  border-radius: 30px;
+  padding: 30px;
+  font-family: "Cutive Mono", monospace;
+  border: 2px solid #cc6700;
+  font-size: 18px;
+  outline: none;
+  resize: none;
+  overflow: auto;
+  scroll-padding: 50px 0px 0px 50px;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    overflow: hidden;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 10px;
+    margin: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
 }

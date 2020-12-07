@@ -7,10 +7,13 @@ export default function ViewLantern() {
   const lantern = data.filter((lant) => lant.id === parseInt(id))[0];
   // console.log(lantern);
   return (
-    <main className="view__container animate__animated animate__fadeInUp">
-      {/* <h1>Viewing a Lantern: {lantern.id}</h1> */}
-      <p>{lantern.content}</p>
-      {/* <p>{JSON.stringify(lantern.replies, null, 2)}</p> */}
-    </main>
+    <div>
+      <h1>From another soul...</h1>
+      <main className="view__container animate__animated animate__fadeInUp">
+        {/* <h1>Viewing a Lantern: {lantern.id}</h1> */}
+        <p>{lantern.content}</p>
+        {/* <p>{JSON.stringify(lantern.replies, null, 2)}</p> */}
+      </main>
+    </div>
   );
 }
