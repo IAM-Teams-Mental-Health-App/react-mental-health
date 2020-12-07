@@ -1,3 +1,4 @@
+
 h1 {
   font-size: 31px;
   font-weight: 400;
@@ -13,6 +14,35 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+
+// .view__container {
+//   .lantern__deets {
+//     margin: 0 auto;
+//     width: 400px;
+//     height: auto;
+//     padding: 40px;
+//     border-radius: 10px;
+//     background-color: #c4c4c4;
+//   }
+
+//   h1 {
+//     font-size: 31px;
+//     font-weight: 400;
+//     color: white;
+//     text-align: center;
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .view__container {
+//     // width: 100%;
+//     // padding: 0;
+//     // margin: 0;
+//     .lantern__deets {
+//       width: auto;
+//       margin: 0;
+//     }
+//   }
 }
 
 .animate__fadeInUp {
