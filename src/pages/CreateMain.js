@@ -2,6 +2,7 @@
 /* eslint-disable react/destructuring-assignment */
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import axios from 'axios';
 
 export default function CreateMain() {
   const history = useHistory();
@@ -33,8 +34,19 @@ export default function CreateMain() {
     document.getElementById('final__sec').classList.add('animate__fadeOut');
     document.getElementById('lantern').classList.add('animate__fadeOutUp');
     setTimeout(() => {
+      axios
+        .post(`${process.env.REACT_APP_BACKEND_URL}/post`, formState)
+        .then((response) => {
+          // console.log(response);
+        })
+        .catch((err) => {
+          console.log(err);
+        })
+        .finally(() => {
+          history.push('/');
+        });
+
       // todo axios post
-      history.push('/');
     }, 1500);
   };
 

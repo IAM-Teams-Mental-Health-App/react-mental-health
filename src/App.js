@@ -15,7 +15,9 @@ function App() {
     <div className="App container">
       <Header />
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/">
+          <Home />
+        </Route>
         <Route exact path="/about" component={Onboarding} />
         <Route path="/create" component={CreateMain} />
         <Route path="/view/:id" component={ViewLantern} />
