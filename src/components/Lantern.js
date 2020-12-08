@@ -24,7 +24,7 @@ export default function Lantern({ data }) {
       break;
     default:
       lanternImg = circle1;
-      return;
+      break;
   }
 
   return (
