@@ -40,9 +40,6 @@
     }
   }
 
-  // lanterns
-  // max-height: 450px;
-
   //colors
   .pickLanternColor {
     display: flex;
@@ -51,20 +48,15 @@
     list-style-type: none;
     padding: 0;
     margin-top: -2.5rem;
+    margin-bottom: 30px;
 
     $colors: red, orange, yellow, green, blue;
 
-    @for $i from 1 through length($colors) {
-      li:nth-child(#{length($colors)}n + #{$i}) {
-        background: lighten(nth($colors, $i), 20%);
-      }
-    }
-    &--item {
-      width: 85px;
-      height: 85px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+    // @for $i from 1 through length($colors) {
+    //   .color-btn:nth-child(#{length($colors)}n + #{$i}) {
+    //     border-color: lighten(nth($colors, $i), 20%);
+    //   }
+    // }
   }
 
   .btn--next {
@@ -91,4 +83,47 @@ h1 {
 
 .no-show {
   display: none;
+}
+
+/* pretty radio */
+label > input[type="radio"] {
+  display: none;
+}
+
+label > input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.color-btn--red[type="radio"]:checked + *::before {
+  background: red;
+}
+.color-btn--orange[type="radio"]:checked + *::before {
+  background: orange;
+}
+.color-btn--yellow[type="radio"]:checked + *::before {
+  background: yellow;
+}
+.color-btn--purple[type="radio"]:checked + *::before {
+  background: purple;
+}
+.color-btn--green[type="radio"]:checked + *::before {
+  background: green;
+}
+
+.color-text {
+  display: block;
+  width: min-content;
+  margin-top: 10px;
 }
