@@ -1,65 +1,36 @@
-import React, { useEffect, useState } from 'react';
+/* eslint-disable no-nested-ternary */
+import React from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
-
 // locals
 import Lantern from '../components/Lantern';
+import useLanterns from '../hooks/useLanterns';
 // import { data as lanterns } from '../dummy/data';
 
 export default function Home() {
-  const [lanterns, setLanterns] = useState([]);
-  // const [loading, setLoading] = React.useState(true);
-  async function getLanterns() {
-    axios
-      .get(`${process.env.REACT_APP_BACKEND_URL}/post`)
-      .then((res) => {
-        // setLoading(false);
-        console.log(res.data);
-        setLanterns(res.data);
-        // return null;
-      })
-      .catch((err) => {
-        console.log(err);
-        // setLoading(false);
-      });
-  }
-  useEffect(() => {
-    getLanterns();
-    // axios
-    //   .get(`${process.env.REACT_APP_BACKEND_URL}/post`)
-    //   .then(({ data }) => {
-    //     console.log({ data });
-    //     setLanterns([...data]);
-    //     setLoading(false);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //     setLoading(false);
-    //   });
-    // .finally(() => {
-    //   setLoading(false);
-    //   setLanterns([]);
-    // });
-  }, []);
+  // use query
+  const { isLoading, isError, data, isFetching } = useLanterns();
 
-  if (lanterns.length === 0) {
-    return (
-      <main>
-        <p>LOADING</p>
-      </main>
-    );
-  }
+  // console.log('R-Query.data', data);
 
   return (
     <main className="home__dashboard">
       <div className="home__ui">
         <Link to="/create">Create Lantern</Link>
+        {isFetching ? <p>loading more...</p> : null}
       </div>
-      <div className="home__lanterns">
-        {lanterns.map((lantern) => (
-          <Lantern key={lantern.id} data={lantern} />
-        ))}
-      </div>
+      {isLoading ? (
+        <p>Loading</p>
+      ) : isError ? (
+        <>
+          <p>Oops, an error ocurred...</p>
+        </>
+      ) : (
+        <div className="home__lanterns">
+          {data.map((lantern) => (
+            <Lantern key={lantern.id} data={lantern} />
+          ))}
+        </div>
+      )}
     </main>
   );
 }

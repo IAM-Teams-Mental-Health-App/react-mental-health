@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import { ReactQueryDevtools } from 'react-query-devtools';
 // local imports
 import Header from './components/Header';
 // pages
@@ -28,6 +29,7 @@ function App() {
           <p>Route/Page does not exist</p>
         </Route>
       </Switch>
+      <ReactQueryDevtools initialIsOpen />
     </div>
   );
 }
