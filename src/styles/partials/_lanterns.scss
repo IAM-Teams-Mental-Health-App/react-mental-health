@@ -4,15 +4,17 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  button {
-    border: none;
-  }
+  // button {
+  //   border: none;
+  // }
 }
 
 .lantern__main {
-  max-width: 150px;
+  display: block;
+  min-width: 250px;
   height: auto;
   background: transparent;
+  border: none;
   cursor: pointer;
 }
 

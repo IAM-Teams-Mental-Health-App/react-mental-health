@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Onboarding() {
   return (
-    <main className="onboarding__main">
+    <main className="onboarding__main animate__animated animate__fadeIn animate__slow">
       <div className="home__hero">
         <h1>Thanks For Stopping By</h1>
         <h2>

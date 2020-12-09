@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 // import { data } from '../dummy/data';
 
@@ -37,13 +37,16 @@ export default function ViewLantern() {
   }
 
   return (
-    <div>
-      <h1>From another soul...</h1>
-      <main className="view__container animate__animated animate__fadeInUp">
-        {/* <h1>Viewing a Lantern: {lantern.id}</h1> */}
+    <main id="lantern__deets">
+      <h1 className="animate__animated animate__fadeInDown animate__slow">
+        From another soul...
+      </h1>
+      <div className="view__container animate__animated animate__fadeInUp animate__slow">
         <p>{lantern.content}</p>
-        {/* <p>{JSON.stringify(lantern.replies, null, 2)}</p> */}
-      </main>
-    </div>
+      </div>
+      <div className="back__button animate__animated animate__fadeIn animate__delay-2s">
+        <Link to="/">Home</Link>
+      </div>
+    </main>
   );
 }

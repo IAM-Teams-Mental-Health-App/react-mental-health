@@ -7,7 +7,6 @@ import Lantern from '../components/Lantern';
 
 export default function Home() {
   const [lanterns, setLanterns] = useState([]);
-  // const [loading, setLoading] = React.useState(true);
   async function getLanterns() {
     axios
       .get(`${process.env.REACT_APP_BACKEND_URL}/post`)
@@ -25,7 +24,7 @@ export default function Home() {
 
   if (lanterns.length === 0) {
     return (
-      <main>
+      <main className=" animate__animated animate__fadeIn">
         <p>LOADING</p>
       </main>
     );
@@ -33,7 +32,7 @@ export default function Home() {
 
   return (
     <main className="home__dashboard">
-      <div className="home__ui">
+      <div className="home__ui animate__animated animate__fadeIn animate__slow">
         <Link to="/create">Create Lantern</Link>
       </div>
       <div className="home__lanterns">
