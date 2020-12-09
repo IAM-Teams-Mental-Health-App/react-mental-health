@@ -4,8 +4,8 @@ import { useHistory } from 'react-router-dom';
 
 // local imports
 
-import circle1 from '../assets/lanterns/lantern-03.svg';
-import square from '../assets/lanterns/lantern-04.svg';
+// import circle1 from '../assets/lanterns/lantern-03.svg';
+// import square from '../assets/lanterns/lantern-04.svg';
 
 import attachFly from '../hooks/attachFly';
 
