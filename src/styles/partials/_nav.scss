@@ -1,5 +1,6 @@
 .header__inner {
   // margin-right: -4rem;
+
   p {
     display: inline-block;
     margin: 1rem;
@@ -11,5 +12,11 @@
 
   p:hover {
     border-bottom: 3px #cc6700 solid;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__inner {
+    margin: 0 auto;
   }
 }

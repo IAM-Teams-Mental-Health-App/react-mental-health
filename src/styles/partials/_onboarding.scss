@@ -66,7 +66,7 @@
     .step__container:nth-child(even) .step__left {
       order: 1;
       padding-right: 0;
-      padding-left: 2rem;
+      padding-left: 1rem;
     }
   }
 
@@ -93,9 +93,23 @@
     }
     .step__container:nth-child(even) .step__left {
       order: 0;
+      padding-left: 0;
     }
     .step__container:nth-child(odd) .step__right {
       order: -1;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .home__steps {
+      .step__container {
+        margin: 1rem 0;
+      }
+      .step__container:nth-child(even) .step__left {
+        // order: 0;
+        padding: 0 0;
+        // padding-left: 0 !important;
+      }
     }
   }
 }

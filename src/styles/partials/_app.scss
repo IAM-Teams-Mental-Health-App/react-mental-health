@@ -48,3 +48,10 @@ img {
 .error__input {
   border-color: red;
 }
+
+@media (max-width: 500px) {
+  .container {
+    width: auto;
+    padding: 0 1rem;
+  }
+}
