@@ -132,3 +132,15 @@ label > input[type="radio"] + *::before {
   width: min-content;
   margin-top: 10px;
 }
+
+@media (max-width: 600px) {
+  .create__write {
+    width: auto;
+    padding: 0 1rem;
+  }
+  .create__main__form {
+    #lantern_body {
+      min-width: 80vw;
+    }
+  }
+}

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
+import { motion } from 'framer-motion';
 
 export default function CreateMain() {
   const history = useHistory();
@@ -47,11 +48,16 @@ export default function CreateMain() {
         });
 
       // todo axios post
-    }, 1500);
+    }, 1200);
   };
 
   return (
-    <div className="create__main">
+    <motion.div
+      className="create__main"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       {btnIndex === 1 ? (
         <CreateLanternForm
           btnIndex={btnIndex}
@@ -76,17 +82,23 @@ export default function CreateMain() {
           val={formState}
         />
       ) : null}
-    </div>
+    </motion.div>
   );
 }
 
 function CreateLanternForm({ handleCount, handleTextInput, val }) {
   return (
-    <div className="create__write">
+    <motion.div
+      className="create__write"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <h1>What's on your mind?</h1>
 
       <form className="create__main__form">
         <textarea
+          id="lantern_body"
           name="lantern_body"
           placeholder="How's your day going?"
           value={val}
@@ -97,13 +109,17 @@ function CreateLanternForm({ handleCount, handleTextInput, val }) {
       <button className="btn--next" type="button" onClick={handleCount}>
         Next
       </button>
-    </div>
+    </motion.div>
   );
 }
 
 function ChooseLanternColor({ handleCount, handleColorInput, val }) {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <h1>Choose a Color</h1>
       <div className="lanter__example" style={{ fill: val }}>
         <svg className="lantern" viewBox="0 0 100 105">
@@ -179,13 +195,19 @@ function ChooseLanternColor({ handleCount, handleColorInput, val }) {
       <button className="btn--next" type="submit" onClick={handleCount}>
         Next
       </button>
-    </div>
+    </motion.div>
   );
 }
 
 function SubmitLantern({ val, handleFinalSubmit }) {
   return (
-    <div id="final__sec" className="animate__animated">
+    <motion.div
+      id="final__sec"
+      className="animate__animated"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <h1>Submit Your Lantern</h1>
       <div
         id="lantern"
@@ -199,6 +221,6 @@ function SubmitLantern({ val, handleFinalSubmit }) {
       <button className="btn--next" type="submit" onClick={handleFinalSubmit}>
         Submit
       </button>
-    </div>
+    </motion.div>
   );
 }

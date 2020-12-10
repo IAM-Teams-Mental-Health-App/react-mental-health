@@ -1,8 +1,14 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 export default function Onboarding() {
   return (
-    <main className="onboarding__main animate__animated animate__fadeIn animate__slow">
+    <motion.main
+      className="onboarding__main animate__animated"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="home__hero">
         <h1>Thanks For Stopping By</h1>
         <h2>
@@ -109,6 +115,6 @@ export default function Onboarding() {
           </div>
         </div>
       </div>
-    </main>
+    </motion.main>
   );
 }
