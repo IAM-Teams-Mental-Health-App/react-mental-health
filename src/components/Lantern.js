@@ -17,6 +17,7 @@ export default function Lantern({ data }) {
       type="button"
       className={`lantern__main animate__animated animate__fadeInUp
         ${data.id % 2 === 0 ? 'animate__slow' : 'animate__slower'}`}
+      aria-label={`lantern-${data.type}-${data.id}`}
       onClick={() => {
         attachFly();
         // wait for 1.9s before pushing to deets
@@ -26,12 +27,8 @@ export default function Lantern({ data }) {
       }}
     >
       <div
-        className={`lantern__example animate__animated animate__slower animate__infinite ${
-          data.id % 3 === 0
-            ? 'animate__swing'
-            : data.id % 2 === 0
-            ? 'animate__pulse'
-            : 'animate__swing'
+        className={`lantern__example animate__animated animate__infinite animate__swing ${
+          data.id % 2 === 0 ? 'animate__slower' : 'animate__slow'
         }`}
         style={{ fill: data.color }}
       >

@@ -11,7 +11,7 @@ export default function Home() {
     axios
       .get(`${process.env.REACT_APP_BACKEND_URL}/post`)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setLanterns(res.data);
       })
       .catch((err) => {
@@ -25,7 +25,7 @@ export default function Home() {
   if (lanterns.length === 0) {
     return (
       <main className=" animate__animated animate__fadeIn">
-        <p>LOADING</p>
+        <p>LOADING...</p>
       </main>
     );
   }
