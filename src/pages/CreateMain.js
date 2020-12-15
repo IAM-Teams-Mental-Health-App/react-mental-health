@@ -4,12 +4,8 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import { motion } from 'framer-motion';
-import SquareLantern, {
-  ReactComponent as SquareLantern2,
-} from '../assets/lanterns/square_lantern.svg';
-import CircleLantern, {
-  ReactComponent as CircleLantern2,
-} from '../assets/lanterns/circle_lantern.svg';
+import { ReactComponent as SquareLantern2 } from '../assets/lanterns/square_lantern.svg';
+import { ReactComponent as CircleLantern2 } from '../assets/lanterns/circle_lantern.svg';
 
 export default function CreateMain() {
   const history = useHistory();
