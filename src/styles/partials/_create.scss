@@ -40,6 +40,15 @@
     }
   }
 
+  // choose lantern
+  .chooseLantern {
+    display: flex;
+
+    &__lantern {
+      width: max-content;
+    }
+  }
+
   // lantern
   .lantern {
     max-width: 350px;
@@ -54,14 +63,7 @@
     padding: 0;
     margin-top: -2.5rem;
     margin-bottom: 30px;
-
-    $colors: red, orange, yellow, green, blue;
-
-    // @for $i from 1 through length($colors) {
-    //   .color-btn:nth-child(#{length($colors)}n + #{$i}) {
-    //     border-color: lighten(nth($colors, $i), 20%);
-    //   }
-    // }
+    justify-content: center;
   }
 
   .btn--next {
@@ -143,4 +145,19 @@ label > input[type="radio"] + *::before {
       min-width: 80vw;
     }
   }
+}
+
+.lantern-type {
+  border: 1px dotted green;
+  display: flex;
+  width: 100%;
+
+  &__option {
+    width: 100%;
+  }
+}
+
+.resize-lantern {
+  max-width: 150px;
+  margin: 90px auto;
 }
