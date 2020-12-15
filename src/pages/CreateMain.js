@@ -139,7 +139,7 @@ function ChooseLanternType({ handleCount, handleLanternType, val }) {
     >
       <h1>Choose Your Lantern Type</h1>
 
-      <div className="lanter__example">
+      <div className="resize-lantern">
         {val.type === 'circle' ? <CircleLantern2 /> : null}
         {val.type === 'square' ? <SquareLantern2 /> : null}
       </div>
@@ -188,7 +188,7 @@ function ChooseLanternColor({ handleCount, handleColorInput, val }) {
       exit={{ opacity: 0 }}
     >
       <h1>Choose a Color</h1>
-      <div className="lanter__example" style={{ fill: val.color }}>
+      <div className="resize-lantern" style={{ fill: val.color }}>
         {val.type === 'circle' ? <CircleLantern2 /> : null}
         {val.type === 'square' ? <SquareLantern2 /> : null}
       </div>
@@ -278,7 +278,7 @@ function SubmitLantern({ val, handleFinalSubmit }) {
       <div
         id="lantern"
         style={{ fill: val.color }}
-        className="animate__animated"
+        className="animate__animated resize-lantern"
       >
         {val.type === 'circle' ? <CircleLantern2 /> : null}
         {val.type === 'square' ? <SquareLantern2 /> : null}

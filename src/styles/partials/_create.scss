@@ -156,3 +156,8 @@ label > input[type="radio"] + *::before {
     width: 100%;
   }
 }
+
+.resize-lantern {
+  max-width: 150px;
+  margin: 90px auto;
+}
