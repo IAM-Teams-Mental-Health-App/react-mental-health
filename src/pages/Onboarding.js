@@ -1,5 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+// locals
+import CreateImg from '../assets/images/create.png';
+import ReadImg from '../assets/images/read.png';
+import SubmitImg from '../assets/images/submit.png';
 
 export default function Onboarding() {
   return (
@@ -34,11 +38,14 @@ export default function Onboarding() {
           </div>
           <div className="step__right">
             <img
-              src="https://picsum.photos/seed/picsum/640/365"
-              alt="placeholder"
+              src={CreateImg}
+              alt="create example"
               width="640px"
               height="365px"
-              className="animate__animated  animate__fadeIn	"
+              className="animate__animated  animate__fadeIn"
+              style={{
+                objectFit: 'contain',
+              }}
             />
           </div>
         </div>
@@ -57,11 +64,14 @@ export default function Onboarding() {
           </div>
           <div className="step__right">
             <img
-              src="https://picsum.photos/seed/picsum2/640/365"
-              alt="placeholder"
+              src={SubmitImg}
+              alt="submit example"
               width="640px"
               height="365px"
               className="animate__animated  animate__fadeIn"
+              style={{
+                objectFit: 'contain',
+              }}
             />
           </div>
         </div>
@@ -81,11 +91,14 @@ export default function Onboarding() {
           </div>
           <div className="step__right">
             <img
-              src="https://picsum.photos/seed/picsum3/640/365"
-              alt="placeholder"
+              src={ReadImg}
+              alt="read example"
               width="640px"
               height="365px"
               className="animate__animated  animate__fadeIn"
+              style={{
+                objectFit: 'contain',
+              }}
             />
           </div>
         </div>

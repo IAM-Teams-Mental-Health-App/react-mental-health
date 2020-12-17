@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
-import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import { motion } from 'framer-motion';
-import { ReactComponent as SquareLantern2 } from '../assets/lanterns/square_lantern.svg';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { ReactComponent as CircleLantern2 } from '../assets/lanterns/circle_lantern.svg';
+import { ReactComponent as SquareLantern2 } from '../assets/lanterns/square_lantern.svg';
 
 export default function CreateMain() {
   const history = useHistory();
@@ -18,7 +18,7 @@ export default function CreateMain() {
 
   function handleCount(e) {
     e.preventDefault();
-    console.log(formState);
+    // console.log(formState);
     setBtnIndex(btnIndex + 1);
   }
 
@@ -36,7 +36,7 @@ export default function CreateMain() {
 
   const handleFinalSubmit = (e) => {
     e.preventDefault();
-    console.log('# final state: ', formState);
+    // console.log('# final state: ', formState);
     document.getElementById('final__sec').classList.add('animate__fadeOut');
     document.getElementById('lantern').classList.add('animate__fadeOutUp');
     setTimeout(() => {

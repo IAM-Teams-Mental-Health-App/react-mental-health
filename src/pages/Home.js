@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
 // locals
 import Lantern from '../components/Lantern';
 
@@ -46,9 +45,6 @@ export default function Home() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <motion.div className="home__ui animate__animated animate__fadeIn animate__slower">
-        <Link to="/create">Create Lantern</Link>
-      </motion.div>
       <div className="home__lanterns">
         {lanterns.map((lantern) => (
           <Lantern key={lantern.id} data={lantern} />
